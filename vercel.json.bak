@@ -1,0 +1,11 @@
+{
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "env": {
+    "SITE_URL": "${VERCEL_URL}",
+    "OPEN_ROUTER_MODEL_NAME": "anthropic/claude-3-opus:beta"
+  }
+}
