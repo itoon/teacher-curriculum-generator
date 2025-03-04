@@ -1,6 +1,9 @@
 {
   "functions": {
-    "api/generate-curriculum.js": {
+    "api/generate-curriculum/*.js": {
+      "maxDuration": 60
+    },
+    "api/generate-exam/generate-curriculum.js": {
       "maxDuration": 60
     }
   }
