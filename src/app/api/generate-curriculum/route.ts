@@ -69,8 +69,7 @@ Format the response as a structured curriculum with clear sections for each week
           },
           body: JSON.stringify({
             model:
-              process.env.OPEN_ROUTER_MODEL_NAME ??
-              "anthropic/claude-3-opus:beta",
+              process.env.OPEN_ROUTER_MODEL_NAME ?? "deepseek/deepseek-r1:free",
             messages: [
               {
                 role: "system",
@@ -97,6 +96,8 @@ Format the response as a structured curriculum with clear sections for each week
       }
 
       const data = await resp.json();
+      console.log(data);
+
       const generatedCurriculum = data.choices[0]?.message?.content || "";
 
       // If JSON format was requested, try to parse the response as JSON

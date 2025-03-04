@@ -87,8 +87,7 @@ Format the response as a structured exam with clear sections for each question.`
           },
           body: JSON.stringify({
             model:
-              process.env.OPEN_ROUTER_MODEL_NAME ??
-              "anthropic/claude-3-opus:beta",
+              process.env.OPEN_ROUTER_MODEL_NAME ?? "deepseek/deepseek-r1:free",
             messages: [
               {
                 role: "system",
