@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/generate-curriculum.js": {
+      "maxDuration": 60
+    }
+  }
+}
